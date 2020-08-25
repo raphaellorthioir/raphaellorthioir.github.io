@@ -1,0 +1,297 @@
+/* Général*/
+body{
+    margin: 0 auto;
+    border: 1px solid rgb(0,0,0,0.4) ;
+    }
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top:100px;
+    margin-bottom:50px;
+    
+    }
+article{
+    margin-right: 100px;
+}
+
+/*Images*/
+
+.image{
+    display: flex;
+    flex-direction: row ;
+    }
+.image img{
+
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+
+
+/* HEADER*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color:#011C40;
+    }
+  
+#titre
+  
+{
+    color: white;}
+h1 #souligne
+{
+    
+    border-bottom: solid 2px #F2E74B ;
+}
+h1
+{
+    font-size: 70px;
+    color:white;
+    
+}
+
+
+.photo img {
+    position: relative;
+    
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    border: rgba(0, 0, 0, 0.1) 2px solid;
+
+    }
+
+    
+/*Partie Gauche*/
+
+.left{
+
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    width:300px;
+    border-bottom: solid rgba(0, 0, 0, 0.096) 1px;
+    }
+
+.leftbar{
+
+    font-size: large;
+    text-align: center;
+    width: 50%;
+    color:black;
+    background-color:#F2E74B ;
+    border-radius: 30px 10px 100px 50px;
+}
+
+.texte{
+      text-align: justify;
+    margin: 10px 30px ;
+    max-width: 100%;
+    
+    }
+
+
+ /* Partie droite*/
+
+  .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content:space-between;
+    
+    
+
+}
+
+.titreArticle
+{
+    border-bottom: solid 2px #F2F1F0;
+    display: flex;
+    flex-direction: row;
+    
+    
+    }
+
+
+.titreArticle img
+{
+  height: 40px;
+  width: 40px;
+ margin-right: 40px;
+  margin-bottom: 10px;
+}
+ .ligne{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    
+ }
+
+ .intitulé
+ {   display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+      width:70%;
+     
+     
+ }
+ 
+
+/* Fonts , changements de police et de tailles*/
+
+.font1 /* "Pour les intitulés: Formation, expérience , contact etc*/
+{
+    font-size: 35px;
+    
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+.font2 /* pour le sous titre, les titre  d'articles */
+{
+  font-size: 25px;
+  font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Rubik', sans-serif;
+}
+
+.font3 /* pour le texte plus petit*/
+{   
+    
+    font-size: 15px;
+   font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+/*Footer*/
+
+footer{
+
+    display:flex;
+    flex-direction: row;
+    background-color: lightgray;
+  }
+
+
+.icones{
+
+    display: flex ;
+    width: 100%;
+    margin: auto;
+   
+    justify-content:center;
+   
+     }
+
+
+  
+#icone1{
+    background: url('images/vg.svg') no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    
+    
+}
+
+
+#icone2{
+    background: url('images/friends.svg')no-repeat;
+    width: 50px;
+    height: 50px;
+     margin: auto;
+     
+ 
+    
+}
+#icone3{
+    
+    background: url('images/beer.svg') no-repeat;
+    width: 50px;
+    height: 50px;
+   margin: auto;
+   
+}
+/* recommandations*/
+
+.recommandations
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+/*Responsive*/
+
+
+@media screen and  (max-width:1110px){
+
+  
+    header{
+        flex-direction: column;
+    }
+    h1{
+        margin-left: 150px;
+        margin-bottom: 150px;
+    }
+   .left{
+       width: 100%;
+       padding: 20px 0;
+       flex-wrap:wrap;
+       border: solid rgba(0, 0, 0, 0.082) 1px;
+      
+
+   }
+   .icones{
+       margin-top: 20px;
+   }
+   .right{
+       width: 100%;
+       margin-top:50px;
+       
+       
+   }
+    main {
+        flex-direction: column;
+    }
+    
+    footer{
+        flex-direction: column;
+     
+        
+    }
+
+    .ligne{
+        justify-content: space-around;
+    }
+footer .ligne{
+    
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+    
+
+}
+
+@media screen and (max-width:791px){
+
+    .titre{
+        
+    }
+    .ligne{
+        flex-direction: column;
+        margin-left: 20px;
+        
+    }
+    .intitulé{
+        margin-top: 50px;
+    }
+}
