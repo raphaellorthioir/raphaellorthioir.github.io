@@ -41,16 +41,18 @@ header{
   
 {
     color: white;
+    
 
 }
-h1 #souligne
+
+ #souligne
 {
     
     border-bottom: solid 2px #F2E74B ;
 }
 h1
 {
-    font-size: 70px;
+    
     color:white;
     
 }
@@ -171,6 +173,11 @@ font-family: 'Rubik', sans-serif;
    font-family: 'Open Sans Condensed', sans-serif;
     font-family: 'Rubik', sans-serif;
 
+}
+ .fontTitre{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 70px;
+    
 }
 
 /*Footer*/
