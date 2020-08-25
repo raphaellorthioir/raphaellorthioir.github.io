@@ -259,6 +259,10 @@ footer{
       
 
    }
+
+   .leftbar{
+       width: 40%;
+   }
    .icones{
        margin-top: 20px;
    }
