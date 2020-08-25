@@ -1,7 +1,7 @@
 /* Général*/
 body{
     margin: 0 auto;
-    border: 1px solid rgb(0,0,0,0.4) ;
+    
     
     }
 main{
@@ -290,21 +290,5 @@ footer .ligne{
     justify-content: space-around;
     margin-bottom: 50px;
 }
-    
 
-}
-
-@media screen and (max-width:791px){
-
-    .titre{
-        
-    }
-    .ligne{
-        flex-direction: column;
-        margin-left: 20px;
-        
-    }
-    .intitulé{
-        margin-top: 50px;
-    }
 }
