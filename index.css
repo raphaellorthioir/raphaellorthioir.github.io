@@ -1,8 +1,6 @@
 /* Général*/
 body{
-    margin: 0;
-    
-    
+    margin: 0 auto;
     }
 main{
     display: flex;
@@ -31,21 +29,16 @@ header{
     display: flex;
     flex-direction: row;
     background-color:#011C40;
-    
-    }
+     }
   
-#titre
-  
-{
+#title
+  {
     color: white;
-    
-
 }
 
- #souligne
+ #underline
 {
-    
-    border-bottom: solid 2px #F2E74B ;
+      border-bottom: solid 2px #F2E74B ;
 }
 h1
 {
@@ -55,27 +48,25 @@ font-size: 60px;
 }
 
 
-.photo img {
+.self_picture img {
     position: relative;
-    
     height: 225px;
     width: 225px;
     border-radius: 50%;
     border: rgba(0, 0, 0, 0.1) 2px solid;
-
-    }
+ }
 
     
 /*Partie Gauche*/
 
 .left{
 
-    display: flex ;
+     display: flex ;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color:white;
-    width: 30%;
+    width:30%;
     border-bottom: solid rgba(0, 0, 0, 0.096) 1px;
     }
 
@@ -86,15 +77,13 @@ font-size: 60px;
     width: 80%;
     background-color:#F2E74B ;
     border-radius: 30px 10px 100px 50px;
+    margin-top: 10px;
 }
 
-.texte{
-      text-align: justify;
+.text{
+      
       padding: 30px;
-
-    
-    
-    }
+  }
 
 
  /* Partie droite*/
@@ -103,44 +92,38 @@ font-size: 60px;
     display: flex;
     flex-direction: column;
     width: 70%;
-    padding-left: 30px;
  }
  
-.titreArticle
+.title_article
 {
     border-bottom: solid 2px #F2F1F0;
     display: flex;
     flex-direction: row;
     margin-top: 30px;
-    
-    
-    }
+    margin-left: 10px;
+}
 
 
-.titreArticle img
+.title_article img
 {
   height: 40px;
   width: 40px;
  margin-right: 40px;
   margin-bottom: 10px;
 }
- .ligne{
+ .background{
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 30px;
-    
-    
  }
 
- .intitulé
+ .study_and_job
  {   display: flex;
      flex-direction: column;
      flex-wrap: wrap;
       width:70%;
-     
-     
  }
  
 
@@ -149,7 +132,6 @@ font-size: 60px;
 .font1 /* "Pour les intitulés: Formation, expérience , contact etc*/
 {
     font-size: 30px;
-    
     font-family: 'Permanent Marker', cursive;
 
 }
@@ -158,16 +140,14 @@ font-size: 60px;
 {
   font-size: 20px;
   font-family: 'Open Sans Condensed', sans-serif;
-font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 .font3 /* pour le texte plus petit*/
 {   
-    
-    font-size: 15px;
-   font-family: 'Open Sans Condensed', sans-serif;
+     font-size: 15px;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-family: 'Rubik', sans-serif;
-
 }
 
 /*Footer*/
@@ -177,49 +157,51 @@ footer{
     display:flex;
     flex-direction: row;
     background-color: lightgray;
+    margin-top:20px ;
+    margin-bottom: 3px;
+    margin-right: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
 
   }
 
 
-.icones{
+.icons{
     display: flex;
     justify-content: space-between;
     margin: auto;
-    width: 80%;
+    width: 100%;
    
      }
 
 
   
-#icone1{
+#icon1{
     background: url('images/vg.svg') no-repeat;
     width: 50px;
     height: 50px;
     margin: auto;
-    
-    
-}
+    }
 
 
-#icone2{
+#icon2{
     background: url('images/friends.svg')no-repeat;
     width: 50px;
     height: 50px;
      margin: auto;
-     
- 
-    
-}
-#icone3{
-    
-    background: url('images/beer.svg') no-repeat;
+     }
+
+#icon3{
+     background: url('images/beer.svg') no-repeat;
     width: 50px;
     height: 50px;
    margin: auto;
-   
+   }
+#split{
+    border-left:2px solid rgba(0, 0, 0, 0.493);
+    padding-left: 5px;
 }
-
-.commendation{
+.references{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -231,64 +213,73 @@ footer{
 
 @media screen and  (max-width:883px){
 
-  
-    header{
+  main{
+      margin:0 20px;
+  }
+
+ header{
         flex-direction: column;
-        
-    }
+         }
+
     h1{
         font-size: 8.5vw;
+        margin-right: 50px;
     }
+
     .font1{
         font-size:5vw ;
     }
+
     .font2{
         font-size:4vw ;
+        font-weight: bold;
     }
+
  .left{
        width: 100%;
        padding: 20px 0;
-       border: solid rgba(0, 0, 0, 0.082) 1px;
-      
-
-   }
+        }
 
    .leftbar{
       width: 50%;
    }
-   .icones{
+
+   .icons{
        margin-top: 20px;
        width: 100%;
    }
+
    .right{
        width: 100%;
-       
-       
-   }
+        }
+
     main{
         flex-direction: column;
     }
     
     footer{
         flex-direction: column;
-        
-      }
-footer .ligne{
-    
- 
-    margin-bottom: 50px;
+        margin: 0 20px;
+        margin-bottom: 20px;
+         }
 }
 
-}
  @media screen and (max-width:560px){
 
-    .ligne{
+    .background{
         flex-direction: column;
         justify-content: space-around;
         height: 300px;
         width: 100%;
     }
-    .commendation{
+
+    .references{
         flex-direction: column;
+        margin-left: 20px;
     }
- }
+
+h1{
+font-size: 7vw;
+}
+
+}
