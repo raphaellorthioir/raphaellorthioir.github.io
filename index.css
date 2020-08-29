@@ -2,39 +2,37 @@
 body{
     margin: 0 auto;
     }
-main{
-    display: flex;
+
+main,.background,.title_article,.image,header,.references{
+   
     flex-direction: row;
      }
 
+.left,.right, header,main,section,article,.background,.title_article,.image,.study_and_job,.icons,.references{
 
+    display: flex;
+}
+.left,.right,.study_and_job,article,section{
+    flex-direction: column;
+}
+.background,.left_section,.icons,.references{
+    justify-content: space-around;
+}
 /*Images*/
 
 .image{
-    display: flex;
-    flex-direction: row ;
+    justify-content:stretch;
+    width: 300px;
     }
 .image img{
 
     width: 20px;
     height: 20px;
     margin-right: 20px;
-}
-
-
+    }
 
 /* HEADER*/
 
-header{
-    display: flex;
-    flex-direction: row;
-    background-color:#011C40;
-     }
-  
-#title
-  {
-    color: white;
-}
 
  #underline
 {
@@ -43,12 +41,15 @@ header{
 h1
 {
  padding-left: 50px;
+ margin-top: 100px;
  color:white;
-font-size: 60px;
+
+}
+.color_name{
+    background-color:#011C40;
 }
 
-
-.self_picture img {
+ figure img {
     position: relative;
     height: 225px;
     width: 225px;
@@ -58,75 +59,94 @@ font-size: 60px;
 
     
 /*Partie Gauche*/
+ 
 
 .left{
-
-     display: flex ;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:white;
-    width:30%;
     border-bottom: solid rgba(0, 0, 0, 0.096) 1px;
+    padding-bottom: 20px;
     }
-
+ .left_section,.left_figure{
+        width: 30%;
+         }
 .leftbar{
-
-    text-align: center;
+     text-align: center;
     color:black;
     width: 80%;
     background-color:#F2E74B ;
     border-radius: 30px 10px 100px 50px;
-    margin-top: 10px;
-}
+   }
 
 .text{
-      
-      padding: 30px;
-  }
+       padding: 30px;
+       text-align: justify;
+ }
 
+ .icons{
+    margin-top:50px ;
+    width: 100%;
+    }
+
+    #icon1{
+    background: url('images/music.svg') no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    }
+
+
+#icon2{
+    background: url('images/vg.svg')no-repeat;
+    width: 50px;
+    height: 50px;
+     margin: auto;
+     }
+
+#icon3{
+     background: url('images/voyages.svg') no-repeat;
+    width: 50px;
+    height: 50px;
+   margin: auto;
+   }
 
  /* Partie droite*/
-
-  .right{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
- }
  
+  .right{
+    width: 70%;
+}
+.right article{
+   margin-top: 20px;
+   margin-left: 20px;
+}
 .title_article
 {
     border-bottom: solid 2px #F2F1F0;
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
     margin-left: 10px;
 }
-
-
 .title_article img
 {
   height: 40px;
   width: 40px;
  margin-right: 40px;
-  margin-bottom: 10px;
+  
 }
  .background{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin-top: 30px;
  }
 
  .study_and_job
- {   display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
+ {   
+     justify-content:stretch;
       width:70%;
  }
- 
-
+ .split{
+    border-left:2px solid rgba(0, 0, 0, 0.493);
+    padding-left: 5px;
+}
+.references{
+    margin-top: 30px;
+}
 /* Fonts , changements de police et de tailles*/
 
 .font1 /* "Pour les intitulés: Formation, expérience , contact etc*/
@@ -150,136 +170,7 @@ font-size: 60px;
     font-family: 'Rubik', sans-serif;
 }
 
-/*Footer*/
-
-footer{
-
-    display:flex;
-    flex-direction: row;
-    background-color: lightgray;
-    margin-top:20px ;
-    margin-bottom: 3px;
-    margin-right: 10px;
-    margin-left: 20px;
-    border-radius: 10px;
-
-  }
 
 
-.icons{
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    width: 100%;
-   
-     }
 
 
-  
-#icon1{
-    background: url('images/vg.svg') no-repeat;
-    width: 50px;
-    height: 50px;
-    margin: auto;
-    }
-
-
-#icon2{
-    background: url('images/friends.svg')no-repeat;
-    width: 50px;
-    height: 50px;
-     margin: auto;
-     }
-
-#icon3{
-     background: url('images/beer.svg') no-repeat;
-    width: 50px;
-    height: 50px;
-   margin: auto;
-   }
-#split{
-    border-left:2px solid rgba(0, 0, 0, 0.493);
-    padding-left: 5px;
-}
-.references{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-
-/*Responsive*/
-
-
-@media screen and  (max-width:883px){
-
-  main{
-      margin:0 20px;
-  }
-
- header{
-        flex-direction: column;
-         }
-
-    h1{
-        font-size: 8.5vw;
-        margin-right: 50px;
-    }
-
-    .font1{
-        font-size:5vw ;
-    }
-
-    .font2{
-        font-size:4vw ;
-        font-weight: bold;
-    }
-
- .left{
-       width: 100%;
-       padding: 20px 0;
-        }
-
-   .leftbar{
-      width: 50%;
-   }
-
-   .icons{
-       margin-top: 20px;
-       width: 100%;
-   }
-
-   .right{
-       width: 100%;
-        }
-
-    main{
-        flex-direction: column;
-    }
-    
-    footer{
-        flex-direction: column;
-        margin: 0 20px;
-        margin-bottom: 20px;
-         }
-}
-
- @media screen and (max-width:560px){
-
-    .background{
-        flex-direction: column;
-        justify-content: space-around;
-        height: 300px;
-        width: 100%;
-    }
-
-    .references{
-        flex-direction: column;
-        margin-left: 20px;
-    }
-
-h1{
-font-size: 7vw;
-}
-
-}

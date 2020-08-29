@@ -1,0 +1,75 @@
+@media screen and  (max-width:883px){
+
+   
+  
+   header,main{
+          flex-direction: column;
+           }
+  
+      h1{
+          font-size: 8.5vw;
+          margin-right: 50px;
+      }
+  
+      .font1{
+          font-size:5vw ;
+      }
+  
+      .font2{
+          font-size:4vw ;
+          font-weight: bold;
+      }
+  .left{
+      margin-top:20px;
+  }
+   .left_section{
+       width: 100%;
+       margin:50px 0;
+   }
+   .left_figure{
+       width: 100%;
+   }
+  
+     .leftbar{
+        width: 60%;
+     }
+  
+     .icons{
+         margin-top: 20px;
+         width: 100%;
+     }
+  
+     .right{
+         width: 100%;
+        }
+  
+  
+  }
+  
+   @media screen and (max-width:560px){
+     .background,.references{
+        flex-direction: column;
+     }
+      .background{
+           justify-content: space-around;
+          height: 300px;
+          width: 100%;
+      }
+  
+      .references{
+          margin-left: 20px;
+      }
+  
+  h1{
+  font-size: 7vw;
+  padding-bottom: 30px;
+  }
+  
+  .self_picture img{
+      position: relative;
+      width: 150px;
+      height:150px;
+  }
+  
+  
+  }
